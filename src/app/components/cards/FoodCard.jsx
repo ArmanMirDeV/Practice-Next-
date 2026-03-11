@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import Link from "next/link";
 
 const FoodCard = ({ food, onAddToCart, onViewDetails }) => {
   return (
@@ -35,12 +36,12 @@ const FoodCard = ({ food, onAddToCart, onViewDetails }) => {
             Add to Cart
           </button>
 
-          <button
-            onClick={() => onViewDetails(food.id)}
+          <Link
+            href={`/foods/${food.id}`}
             className="flex-1 border border-gray-300 bg-green-400 text-gray-700 py-2 rounded-xl hover:bg-green-600 active:scale-95 transition"
           >
             View Details
-          </button>
+          </Link>
         </div>
       </div>
     </div>
