@@ -16,7 +16,7 @@ const FoodsPage = async () => {
     <div>
       <h2 className="text-4xl font-bold">
         {" "}
-        Total <span className="text-yellow-500">{foods.length}</span> data found
+        Total <span className="text-yellow-500">{foods.length}</span> data found in the system 
       </h2>
       <div className="grid my-5 grid-cols-3 gap-5 ">
         {foods.map((food) => (

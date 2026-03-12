@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
          
         </header>
 
-        <main className="px-5 py-8">
+        <main className="px-5 flex justify-center items-center py-8">
         {children}
 
         </main>
